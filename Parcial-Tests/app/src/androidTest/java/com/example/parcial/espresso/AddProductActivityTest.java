@@ -51,13 +51,13 @@ public class AddProductActivityTest {
     @Test
     public void testAddProduct2() throws InterruptedException {
         onView(withId(R.id.ti_ProductNameET)).perform(typeText("TestProduct"), closeSoftKeyboard());
-        onView(withId(R.id.ti_ProductPriceET)).perform(click());
+        onView(withId(R.id.btn_addProduct)).perform(click());
     }
 
     @Test
     public void testAddProduct3() throws InterruptedException {
         onView(withId(R.id.ti_ProductQuantityET)).perform(typeText("5"), closeSoftKeyboard());
-        onView(withId(R.id.ti_ProductPriceET)).perform(click());
+        onView(withId(R.id.btn_addProduct)).perform(click());
     }
 
     @Test
